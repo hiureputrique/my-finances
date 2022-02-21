@@ -14,4 +14,25 @@ const mix = require('laravel-mix');
 mix.js('resources/js/app.js', 'public/js').vue()
     .postCss('resources/css/app.css', 'public/css', [
         //
-    ]);
+    ]).webpackConfig({
+    module: {
+        rules: [
+            {
+                test: /\.s(c|a)ss$/,
+                use: [
+                    'vue-style-loader',
+                    'css-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass'),
+                            sassOptions: {
+                                indentedSyntax: true // optional
+                            },
+                        },
+                    },
+                ],
+            },
+        ]
+    }
+});

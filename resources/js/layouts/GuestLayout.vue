@@ -1,14 +1,11 @@
 <template>
     <v-app>
-        <v-container>
-            <v-btn class="red">Click Me!</v-btn>
-        </v-container>
     </v-app>
 </template>
 
 <script>
 export default {
-    name: "About"
+    name: "GuestLayout"
 }
 </script>
 
