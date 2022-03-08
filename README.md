@@ -17,6 +17,15 @@ Este projeto está sendo desenvolvido como parte de uma mentoria prática, e tem
 
 - https://inertiajs.com/
 
+## Setup
+
+- Configurar variáveis de ambiente no aquivo ``./.env``
+- Instalar dependências php: ``composer install``
+- Executar migrations do bd: ``php artisan migrate``
+- Executar seeds: ``php artisan db:seed``
+- Instalar dependências node: ``npm install``
+- Executar build node: ``npm run dev``
+
 ## Executar ambiente
 
 - Startar server php: ``php -S 127.0.0.1:8080 -t public``
