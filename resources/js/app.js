@@ -3,8 +3,8 @@ require('./bootstrap');
 import Vue from 'vue'
 import { createInertiaApp } from '@inertiajs/inertia-vue'
 import { InertiaProgress } from '@inertiajs/progress'
-import vuetify from './plugins/vuetify'
-import Layout from './layouts/Layout'
+import vuetify from './Plugins/vuetify'
+import Layout from './Layouts/Layout'
 
 InertiaProgress.init()
 

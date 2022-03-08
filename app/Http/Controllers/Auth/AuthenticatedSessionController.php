@@ -14,8 +14,7 @@ class AuthenticatedSessionController extends Controller
 
     public function create()
     {
-        dd('XD');
-        return Inertia::render('Login');
+        return Inertia::render('Auth/Login');
     }
 
     /**

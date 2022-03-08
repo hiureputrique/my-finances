@@ -37,7 +37,8 @@ class HandleInertiaRequests extends Middleware
     public function share(Request $request): array
     {
         return array_merge(parent::share($request), [
-            'logo' => asset(config('template.logo'))
+            'logo' => asset(config('template.logo')),
+            'auth' => ['user' => $request->user()],
         ]);
     }
 }
