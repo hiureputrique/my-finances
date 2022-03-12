@@ -29803,7 +29803,7 @@ var render = function () {
                     [
                       _c("v-card-subtitle", { staticClass: "text-center" }, [
                         _vm._v(
-                          "\n                            Log in to my finances portal\n                        "
+                          "\n                            Register in to my finances portal\n                        "
                         ),
                       ]),
                       _vm._v(" "),
